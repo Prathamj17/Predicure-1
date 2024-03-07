@@ -12,90 +12,40 @@ Online HTML, CSS and JavaScript editor to run code online.
 </head>
 
 <body>
-  <h1>
-    Obesity Dataset
-  </h1>
- <form>
-    <fieldset>
-      <legend>Personal Information</legend>
-      <label for="age">Age:</label><br>
-      <input type="number" id="age" name="age"><br>
-      <label for="gender">Gender:</label><br>
+  <h1>Obesity Dataset</h1>
+  <div class="form-container">
+    <div class="form-item">
+      <label for="age">Your Age:</label>
+      <input type="number" id="age" name="age" min="1" max="120" required>
+      <label for="gender">Gender:</label>
       <input list="genders" name="gender">
       <datalist id="genders">
         <option value="Male">
         <option value="Female">
-      </datalist><br><br>
-    </fieldset>
-  
-    <fieldset>
-      <legend>Physical Attributes</legend>
-      <label for="height">Height (in meters):</label><br>
-      <input type="number" id="height" name="height" step="0.01"><br>
-      <label for="weight">Weight (in kg):</label><br>
-      <input type="number" id="weight" name="weight" step="0.01"><br>
-    </fieldset>
-  
-    <fieldset>
-      <legend>Lifestyle and Habits</legend>
-      <label for="history">Family History with overweight:</label><br>
+      </datalist>
+    </div>
+
+    <div class="form-item">
+      <label for="height">Height (in meters):</label>
+      <input type="number" id="height" name="height" step="0.01">
+      <label for="weight">Weight (in kg):</label>
+      <input type="number" id="weight" name="weight" step="0.01">
+    </div>
+
+    <div class="form-item">
+      <label for="history">Family History with overweight:</label>
       <input list="histories" name="history">
       <datalist id="histories">
         <option value="Yes">
         <option value="No">
-      </datalist><br>
-      <label for="FAVC">Do you eat high caloric food frequently?:</label><br>
+      </datalist>
+      <label for="FAVC">Do you eat high caloric food frequently?:</label>
       <input list="FAVC" name="FAVC">
       <datalist id="FAVC">
         <option value="Yes">
         <option value="No">
-      </datalist><br>
-      <label for="FCVC">Do you usually eat vegetables in your meals?:</label><br>
-      <input type="number" id="FCVC" name="FCVC"><br>
-      <label for="NCP">How many main meals do you have daily?:</label><br>
-      <input type="number" id="NCP" name="NCP"><br>
-      <label for="CAEC">Do you eat any food between meals?:</label><br>
-      <input list="CAEC" name="CAEC">
-      <datalist id="CAEC">
-        <option value="Sometimes">
-        <option value="Frequently">
-        <option value="Always">
-      </datalist><br>
-      <label for="SMOKE">Do you smoke?:</label><br>
-      <input list="SMOKE" name="SMOKE">
-      <datalist id="SMOKE">
-        <option value="Yes">
-        <option value="No">
-      </datalist><br>
-    </fieldset>
-  
-    <fieldset>
-      <legend>Diet and Nutrition</legend>
-      <label for="CH2O">How much water do you drink daily (in liters)?:</label><br>
-      <input type="number" id="CH2O" name="CH2O"><br>
-      <label for="SCC">Do you monitor the calories you eat daily?:</label><br>
-      <input list="SCC" name="SCC">
-      <datalist id="SCC">
-        <option value="Yes">
-        <option value="No">
-      </datalist><br>
-      <label for="FAF">How often do you have physical activity (in days/week)?:</label><br>
-      <input type="number" id="FAF" name="FAF"><br>
-      <label for="TUE">How much time do you use technological devices daily (in hours)?:</label><br>
-      <input type="number" id="TUE" name="TUE"><br>
-      <label for="CALC">How often do you drink alcohol?:</label><br>
-      <input list="CALC" name="CALC">
-      <datalist id="CALC">
-        <option value="Sometimes">
-        <option value="Frequently">
-        <option value="Always">
-        <option value="No">
-      </datalist><br>
-    </fieldset>
-  
-    <fieldset>
-      <legend>Transportation</legend>
-      <label for="MTRANS">Which transportation do you usually use?:</label><br>
+      </datalist>
+      <label for="MTRANS">Which transportation do you usually use?:</label>
       <input list="MTRANS" name="MTRANS">
       <datalist id="MTRANS">
         <option value="Automobile">
@@ -103,11 +53,63 @@ Online HTML, CSS and JavaScript editor to run code online.
         <option value="Bike">
         <option value="Public_Transportation">
         <option value="Walking">
-      </datalist><br>
-    </fieldset>
+      </datalist>
+    </div>
+
+    <div class="form-item">
+      <label for="FCVC">Do you usually eat vegetables in your meals?:</label>
+      <input type="number" id="FCVC" name="FCVC">
+      <label for="NCP">How many main meals do you have daily?:</label>
+      <input type="number" id="NCP" name="NCP">
+      <label for="CAEC">Do you eat any food between meals?:</label>
+      <input list="CAEC" name="CAEC">
+      <datalist id="CAEC">
+        <option value="Sometimes">
+        <option value="Frequently">
+        <option value="Always">
+      </datalist>
+    </div>
+
+    <div class="form-item">
+      <label for="SMOKE">Do you smoke?:</label>
+      <input list="SMOKE" name="SMOKE">
+      <datalist id="SMOKE">
+        <option value="Yes">
+        <option value="No">
+      </datalist>
+      <label for="CH2O">How much water do you drink daily (in liters)?:</label>
+      <input type="number" id="CH2O" name="CH2O">
+      <label for="SCC">Do you monitor the calories you eat daily?:</label>
+      <input list="SCC" name="SCC">
+      <datalist id="SCC">
+        <option value="Yes">
+        <option value="No">
+      </datalist>
+    </div>
+
+    <div class="form-item">
+      <label for="FAF">How often do you have physical activity (in days/week)?:</label>
+      <input type="number" id="FAF" name="FAF">
+      <label for="TUE">How much time do you use technological devices daily (in hours)?:</label>
+      <input type="number" id="TUE" name="TUE">
+      <label for="CALC">How often do you drink alcohol?:</label>
+      <input list="CALC" name="CALC">
+      <datalist id="CALC">
+        <option value="Sometimes">
+        <option value="Frequently">
+        <option value="Always">
+        <option value="No">
+      </datalist>
+    </div>
+
+    
+  </div>
   
-    <input type="submit"><br>
+  <div class="submit-container">
+    <input type="submit" value="Submit">
+  </div>
   </form>
+  
    
   
 </body>

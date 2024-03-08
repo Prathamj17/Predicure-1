@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diabetes Dataset</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #007bff;
+      margin-bottom: 30px;
+    }
+
+    .form-container {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .form-item {
+      margin-bottom: 20px;
+    }
+
+    label {
+      color: #6c757d;
+      font-weight: bold;
+      display: block;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .submit-container {
+      text-align: center;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+    }
+
+    .pagination li {
+      display: inline;
+      margin: 0 5px;
+    }
+
+    .pagination li a {
+      color: #007bff;
+      padding: 5px 10px;
+      text-decoration: none;
+      border: 1px solid #007bff;
+      border-radius: 5px;
+    }
+
+    .pagination li a:hover {
+      background-color: #007bff;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Diabetes Dataset</h1>
+  <div class="form-container">
+    <div class="form-item">
+      <label for="Pregnancies">Number of times pregnant:</label>
+      <input type="number" id="Pregnancies" name="Pregnancies" min="0" max="17" required>
+      <label for="Glucose">Plasma glucose concentration:</label>
+      <input type="number" id="Glucose" name="Glucose" min="0" max="199">
+    </div>
+
+    <div class="form-item">
+      <label for="BP">Blood Pressure (in mm Hg):</label>
+      <input type="number" id="BP" name="BP" min="0" max="122">
+      <label for="SkinThickness">Triceps skin fold thickness (mm):</label>
+      <input type="number" id="SkinThickness" name="SkinThickness">
+    </div>
+    <div class="form-item">
+      <label for="Insulin">2-Hour serum insulin (mu U/ml):</label>
+      <input type="number" id="Insulin" name="Insulin" min="0" max="846">
+      <label for="BMI">Body mass index (weight in kg/(height in m)^2:</label>
+      <input type="number" id="BMI" name="BMI">
+    </div>
+    <div class="form-item">
+      <label for="DiabetesPedigreeFunction">Diabetes pedigree function:</label>
+      <input type="number" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction" min="0.08" max="2.42" step="0.01">
+      <label for="Age">Your Age:</label>
+      <input type="number" id="Age" name="Age">
+    </div>
+  </div>
+
+  <div class="submit-container">
+    <input type="submit" value="Submit">
+  </div>
+  <footer>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="obesity.html" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="obesity.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer> 
+</body>
+
+</html>
